@@ -12,7 +12,7 @@ def get_unique_categories() -> list:
     :rtype: list
     """
     try:
-        file_path = r'D:\0_Respaldo\00_Proyectos_2025\Coding\llm\peru_legal\itaca_legal\data\categorias_subcategorias.csv'
+        file_path = r'https://github.com/Remolino777/itaca_legal/blob/main/data/categorias_subcategorias.csv'
         
         # Leer el archivo CSV con el encoding adecuado
         df = pd.read_csv(file_path, encoding='utf-8')
@@ -59,7 +59,7 @@ def get_related_subcategories(categoria: str) -> list:
     categoria_limpia = categoria.strip("'").strip().upper()   
     
     # Leer el CSV
-    path = r'D:\0_Respaldo\00_Proyectos_2025\Coding\llm\peru_legal\itaca_legal\data\categorias_subcategorias.csv'
+    path = r'https://github.com/Remolino777/itaca_legal/blob/main/data/categorias_subcategorias.csv'
     try:
         df = pd.read_csv(path, encoding='utf-8')      
         

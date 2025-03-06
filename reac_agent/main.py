@@ -57,7 +57,7 @@ def set_background_color():
 set_background_color()
 
 # Título y logo
-st.image(r"D:\0_Respaldo\00_Proyectos_2025\Coding\llm\peru_legal\itaca_legal\logo.png", width=300)
+st.image(r"https://github.com/user-attachments/assets/c026e391-fa23-4457-b575-5bd933ad6e36", width=300)
 
 # Formulario para la entrada del usuario
 with st.form(key="question_form"):
