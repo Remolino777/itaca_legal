@@ -10,8 +10,13 @@ from state import AgentState
 from react import run_agent
 import streamlit as st
 
-import nest_asyncio
-nest_asyncio.apply()
+import asyncio
+
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+
 
 AGENT_REASON = 'agent_reason'
 ACT = 'act'
