@@ -22,10 +22,11 @@ load_dotenv()
 #react_prompt = PromptTemplate = hub.pull('hwchase17/react')
 react_prompt = PromptTemplate(
     template='''
-    Encuentra la subcategoría que mejor se ajuste al siguiente input lo mejor que puedas. Tienes acceso a las siguientes herramientas:
+    Find the subcategory that better fits the following input as best you can. You have access to the following tools:
+
 {tools}
 
-Utiliza el siguiente formato:
+Use the following format:
 
 Question: the input question you must answer
 Thought: you should always think about what to do
@@ -34,7 +35,7 @@ Action Input: the input to the action
 Observation: the result of the action
 ... (this Thought/Action/Action Input/Observation can repeat N times)
 Thought: I now know the final answer
-Final Answer: the subcategory chosen that is most related to the input and do not translate. 
+Final Answer: the subcategory chosen that is most related to the input, and don't translate the answer.
 
 Begin!
 
