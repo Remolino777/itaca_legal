@@ -2,3 +2,5 @@
 src
 .respaldo
 .itaca_app
+pyproject.toml
+poetry.lock
