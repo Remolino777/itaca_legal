@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from langchain_core.agents import AgentFinish
 from langgraph.graph import END, StateGraph
@@ -9,6 +9,9 @@ from nodes import execute_tools, run_agent_reasonig_engine
 from state import AgentState
 from react import run_agent
 import streamlit as st
+
+import nest_asyncio
+nest_asyncio.apply()
 
 AGENT_REASON = 'agent_reason'
 ACT = 'act'
