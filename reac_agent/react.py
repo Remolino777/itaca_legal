@@ -1,4 +1,4 @@
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from typing import Union
 import re
 
@@ -11,15 +11,7 @@ from langchain_core.exceptions import OutputParserException
 from tools import get_unique_categories, get_related_subcategories
 from langchain import hub
 import streamlit as st
-load_dotenv()
-
-# google_api_key = st.secrets["GOOGLE_API_KEY"]
-# langsmith_tracing = st.secrets["LANGSMITH_TRACING"]
-# langsmith_endpoint = st.secrets["LANGSMITH_ENDPOINT"]
-# langsmith_api_key = st.secrets["LANGSMITH_API_KEY"]
-# langsmith_project = st.secrets["LANGSMITH_PROJECT"]
-
-#react_prompt = PromptTemplate = hub.pull('hwchase17/react')
+#load_dotenv()
 react_prompt = PromptTemplate(
     template='''
     Find the subcategory that better fits the following input as best you can. You have access to the following tools:
@@ -44,7 +36,7 @@ Thought:{agent_scratchpad}
 '''
 )
 
-
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 
 tools = [get_unique_categories, get_related_subcategories]

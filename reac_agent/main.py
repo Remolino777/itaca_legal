@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 from langchain_core.agents import AgentFinish
 from langgraph.graph import END, StateGraph
@@ -18,7 +18,9 @@ except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
 
 
-
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+LANGSMITH_TRACING = st.secrets["LANGSMITH_TRACING"]
+LANGSMITH_ENDPOINT = st.secrets["LANGSMITH_ENDPOINT"]
 
 
 
