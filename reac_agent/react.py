@@ -35,7 +35,7 @@ Action Input: the input to the action
 Observation: the result of the action
 ... (this Thought/Action/Action Input/Observation can repeat N times)
 Thought: I now know the final answer
-Final Answer: the subcategory chosen that is most related to the input
+Final Answer: the subcategory chosen that is most related to the input, and the answer always be in spanish.
 
 Begin!
 
