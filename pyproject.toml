@@ -21,6 +21,4 @@ nest-asyncio = "^1.6.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[settings]
-date = "2025-03-06"         
-timeout = 60  
+
