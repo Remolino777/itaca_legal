@@ -3,7 +3,7 @@
 
 from langchain_core.agents import AgentFinish
 from langgraph.graph import END, StateGraph
-from langchain.callbacks import StreamlitCallbackHandler
+from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain.schema.runnable import RunnableConfig
 from nodes import execute_tools, run_agent_reasonig_engine
 from state import AgentState
