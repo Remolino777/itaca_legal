@@ -27,19 +27,19 @@ react_prompt = PromptTemplate(
 
 Utiliza el siguiente formato:
 
-Pregunta: la pregunta de entrada que debes responder
-Pensamiento: siempre debes pensar en qué hacer
-Acción: la acción a realizar, debe ser una de [{tool_names}]
-Entrada de la Acción: la entrada para la acción
-Observación: el resultado de la acción
-... (este ciclo de Pensamiento/Acción/Entrada de la Acción/Observación puede repetirse N veces)
-Pensamiento: ahora sé la respuesta final
-Respuesta Final: la subcategoría elegida que esté más relacionada con el input.
+Question: the input question you must answer
+Thought: you should always think about what to do
+Action: the action to take, should be one of [{tool_names}]
+Action Input: the input to the action
+Observation: the result of the action
+... (this Thought/Action/Action Input/Observation can repeat N times)
+Thought: I now know the final answer
+Final Answer: the subcategory chosen that is most related to the input and do not translate. 
 
-¡Empieza!
+Begin!
 
-Pregunta: {input}
-Pensamiento: {agent_scratchpad}
+Question: {input}
+Thought:{agent_scratchpad}
 '''
 )
 
