@@ -1,4 +1,4 @@
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 from typing import Union
 import re
 
@@ -10,8 +10,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.exceptions import OutputParserException
 from tools import get_unique_categories, get_related_subcategories
 from langchain import hub
-import streamlit as st
-#load_dotenv()
+#import streamlit as st
+load_dotenv()
 react_prompt = PromptTemplate(
     template='''
     Find the subcategory that better fits the following input as best you can. You have access to the following tools:
@@ -36,7 +36,7 @@ Thought:{agent_scratchpad}
 '''
 )
 
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+#GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 
 tools = [get_unique_categories, get_related_subcategories]
