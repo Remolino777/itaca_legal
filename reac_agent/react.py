@@ -11,13 +11,13 @@ from langchain_core.exceptions import OutputParserException
 from tools import get_unique_categories, get_related_subcategories
 from langchain import hub
 import streamlit as st
-#load_dotenv()
+load_dotenv()
 
-google_api_key = st.secrets["GOOGLE_API_KEY"]
-langsmith_tracing = st.secrets["LANGSMITH_TRACING"]
-langsmith_endpoint = st.secrets["LANGSMITH_ENDPOINT"]
-langsmith_api_key = st.secrets["LANGSMITH_API_KEY"]
-langsmith_project = st.secrets["LANGSMITH_PROJECT"]
+# google_api_key = st.secrets["GOOGLE_API_KEY"]
+# langsmith_tracing = st.secrets["LANGSMITH_TRACING"]
+# langsmith_endpoint = st.secrets["LANGSMITH_ENDPOINT"]
+# langsmith_api_key = st.secrets["LANGSMITH_API_KEY"]
+# langsmith_project = st.secrets["LANGSMITH_PROJECT"]
 
 #react_prompt = PromptTemplate = hub.pull('hwchase17/react')
 react_prompt = PromptTemplate(
