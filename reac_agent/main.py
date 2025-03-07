@@ -1,5 +1,5 @@
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 from langchain_core.agents import AgentFinish
 from langgraph.graph import END, StateGraph
@@ -16,6 +16,10 @@ try:
     asyncio.get_running_loop()
 except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
+
+
+
+
 
 
 AGENT_REASON = 'agent_reason'
